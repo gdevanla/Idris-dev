@@ -299,7 +299,7 @@ successful, so neither of the following types is quite right:
                               [vec ::: State (Vect n Integer)]
                        (const [vec ::: State (Vect (S n) Integer)])
   readAndAdd_Fail : ConsoleIO io => (vec : Var) ->
-                    STrans m ()  -- Returns an empty tuple
+                    STrans io ()  -- Returns an empty tuple
                                 [vec ::: State (Vect n Integer)]
                          (const [vec ::: State (Vect n Integer)])
 
